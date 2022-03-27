@@ -1,0 +1,212 @@
+.navigation {
+  //shadow for nav
+  box-shadow: 0px 8px 40px rgb(0 0 0 / 5%);
+
+  .top-navigation {
+    &-head {
+      &-location {
+        //border gray
+        border-left: 1px solid $light-gray;
+
+        p {
+          font-size: 20px;
+          position: relative;
+
+          //item location
+          &:before {
+            content: '';
+            position: absolute;
+            background-image: url("data:image/svg+xml,%3Csvg width='14' height='19' viewBox='0 0 14 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.62658 0.536499C2.97286 0.536499 0 3.50936 0 7.16344C0 8.11657 0.195083 9.02659 0.57954 9.86845C2.23637 13.494 5.41297 17.3218 6.34731 18.4085C6.41731 18.4897 6.51936 18.5365 6.62676 18.5365C6.73416 18.5365 6.83621 18.4897 6.90621 18.4085C7.84018 17.322 11.0168 13.4944 12.6742 9.86845C13.0588 9.02659 13.2537 8.11657 13.2537 7.16344C13.2533 3.50936 10.2805 0.536499 6.62658 0.536499ZM6.62658 10.6055C4.72861 10.6055 3.18434 9.06122 3.18434 7.16326C3.18434 5.26511 4.72861 3.72084 6.62658 3.72084C8.52454 3.72084 10.0688 5.26511 10.0688 7.16326C10.069 9.06122 8.52473 10.6055 6.62658 10.6055Z' fill='%23014751'/%3E%3C/svg%3E%0A");
+            width: 13px;
+            height: 18px;
+            left: 0;
+            top: 5px;
+          }
+        }
+
+        span {
+          font-size: 14px;
+        }
+      }
+
+      img {
+        width: 100%;
+        @include media-breakpoint-down(sm) {
+          max-width: 85%;
+        }
+      }
+
+
+      //button nav
+      &-btn {
+        border: none;
+        width: 25px;
+        height: 25px;
+        position: relative;
+        transform: rotate(0deg);
+        transition: .5s ease-in-out;
+        cursor: pointer;
+
+        //styles for span
+        &-dash {
+          display: block;
+          position: absolute;
+          height: 3px;
+          width: 25px;
+          opacity: 1;
+          left: 0;
+          transform: rotate(0deg);
+          transition: .25s ease-in-out;
+          border-radius: 10px;
+
+          //for span 1
+          &:nth-child(1) {
+            top: 1px;
+          }
+
+          //for span 2
+          &:nth-child(2) {
+            top: 9px;
+          }
+
+          //for span 3
+          &:nth-child(3) {
+            top: 17px;
+          }
+        }
+      }
+
+      //menu is closed
+      &-btn:not(.collapsed) {
+        .top-navigation-head-btn-dash {
+
+          //for span 1
+          &:nth-child(1) {
+            top: 8px;
+            transform: rotate(135deg);
+          }
+
+          //for span 2
+          &:nth-child(2) {
+            opacity: 0;
+            left: -60px;
+          }
+
+          //for span 3
+          &:nth-child(3) {
+            top: 8px;
+            transform: rotate(-135deg);
+          }
+        }
+      }
+    }
+
+    //contacts
+    &-contact {
+      &-socials {
+        &__item {
+          padding: 0.4rem;
+
+          &-one {
+            width: 16px;
+            height: 16.5px;
+          }
+
+          &-two {
+            width: 16px;
+            height: 13px;
+          }
+
+          &-three {
+            width: 17px;
+            height: 17px;
+          }
+        }
+      }
+
+      &-information {
+        span,
+        &__mail {
+          font-size: 14px;
+        }
+
+        &__number {
+          font-size: 24px;
+          line-height: 32px;
+
+          //font size down lg
+          @include media-breakpoint-down(lg) {
+            font-size: 20px;
+          }
+
+          //down sm
+          @include media-breakpoint-down(sm) {
+            font-size: 17px;
+          }
+        }
+      }
+    }
+
+    &-menu {
+      //icon home
+      &-home {
+        div {
+          width: 28px;
+          height: 23px;
+        }
+      }
+
+      &-list {
+        &-item {
+          //submenu button
+          &__button {
+            button {
+              width: 22px;
+              height: 16px;
+            }
+          }
+
+          //remove border on mobile
+          @include media-breakpoint-down(lg) {
+            border: 0;
+          }
+        }
+      }
+    }
+
+    //communication
+    &-communication {
+      &__search {
+        div {
+          width: 22px;
+          height: 22px;
+        }
+      }
+
+      //shadow for button
+      button {
+        box-shadow: 0px 4px 16px rgba(255, 140, 105, 0.29);
+
+        &:focus {
+          box-shadow: none;
+        }
+
+        //down xxl
+        @include media-breakpoint-down(xxl) {
+          padding: 0.75rem !important;
+          font-size: 13px;
+        }
+        //down lg
+        @include media-breakpoint-down(lg) {
+          padding: 0.6rem 1rem !important;
+        }
+      }
+    }
+  }
+
+  //gray line
+  &-gray-line {
+    height: 1px;
+    top: 95px;
+  }
+}
