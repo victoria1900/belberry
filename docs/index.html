@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="scss/main.css">
+</head>
+<body>
+
+<!--header-->
+<header>
+    <nav class="navigation navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="navigation-gray-line bg-light-gray w-100 position-absolute d-none d-lg-block"></div>
+        <div class="top-navigation d-inline-block container">
+            <div class="d-block d-lg-flex justify-content-between pb-lg-2">
+                <div class="top-navigation-head d-flex align-items-center justify-content-between">
+                    <div class="pe-lg-40">
+                        <a class="navbar-brand" href="#">
+                            <img src="img/logo.svg" alt="logo">
+                        </a>
+                    </div>
+                    <div class="top-navigation-head-location d-none d-lg-block ps-lg-32">
+                        <p class="text-dark-green fw-bold mb-0 ps-lg-16">Москва</p>
+                        <span class="text-gray fw-bold"><a href="#" class="text-dark-green fw-bold">7 клиник </a>рядом с Вами!
+                        </span>
+                    </div>
+                    <!-- nav button-->
+                    <div class="top-navigation-head-btn d-block d-lg-none collapsed" data-bs-toggle="collapse"
+                         data-bs-target=".multi-collapse" aria-expanded="false" role="button"
+                         aria-controls="show-content-one show-content-two show-content-three">
+                        <span class="top-navigation-head-btn-dash bg-dark-green"></span>
+                        <span class="top-navigation-head-btn-dash bg-dark-green"></span>
+                        <span class="top-navigation-head-btn-dash bg-dark-green"></span>
+                    </div>
+                </div>
+                <div class="collapse multi-collapse d-lg-flex ps-20 ps-lg-0" id="show-content-one">
+                    <div class="top-navigation-contact d-flex flex-column flex-lg-revert align-items-lg-center py-2 py-lg-0">
+                        <div class="top-navigation-contact-socials d-flex py-2 py-lg-0 pe-lg-2 order-2 order-lg-1">
+                            <a href="#" target="_blank"
+                               class="top-navigation-contact-socials__item d-flex align-items-center justify-content-center rounded-circle bg-dark-green me-1">
+                                <div class="bg-size-contain top-navigation-contact-socials__item-one"
+                                     style="background-image: url(img/viber.svg)"></div>
+                            </a>
+                            <a href="#" target="_blank"
+                               class="top-navigation-contact-socials__item d-flex align-items-center justify-content-center rounded-circle bg-dark-green me-1">
+                                <div class="bg-size-contain top-navigation-contact-socials__item-two"
+                                     style="background-image: url(img/telegram.svg)"></div>
+                            </a>
+                            <a href="#" target="_blank"
+                               class="top-navigation-contact-socials__item d-flex align-items-center justify-content-center rounded-circle bg-dark-green">
+                                <div class="bg-size-contain top-navigation-contact-socials__item-three"
+                                     style="background-image: url(img/whatsapp.svg)"></div>
+                            </a>
+                        </div>
+                        <div class="top-navigation-contact-information d-flex flex-column justify-content-start align-items-lg-end ps-lg-2 order-1 order-lg-2">
+                            <span class="text-dark-green fw-normal opacity-50 d-none d-lg-block">Запись на приём</span>
+                            <a class="top-navigation-contact-information__number link-dark-green fw-bold"
+                               href="tel:+74955404803">8 (495) 540-48-03</a>
+                            <a class="top-navigation-contact-information__mail link-dark-green fw-600"
+                               href="mailto:medgorod@bk.ru">medgorod@bk.ru</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="d-lg-flex flex-wrap justify-content-between py-2 ps-20 ps-lg-0">
+                <div class="top-navigation-menu collapse multi-collapse align-items-center d-lg-flex py-lg-3"
+                     id="show-content-two">
+                    <a href="#" class="top-navigation-menu-home d-none d-lg-block">
+                        <div class="bg-size-cover" style="background-image: url(img/icon-home.svg)"></div>
+                    </a>
+                    <ul class="top-navigation-menu-list navbar-nav me-auto mb-3 mb-lg-0 px-lg-40">
+                        <li class="top-navigation-menu-list-item text-uppercase nav-item d-flex align-items-center border-right-gray pe-lg-3">
+                            <div class="top-navigation-menu-list-item__button d-none d-lg-flex">
+                                <button class="bg-size-contain bg-transparent border-0"
+                                        style="background-image: url(img/ellipse-item.svg)"></button>
+                            </div>
+                            <div class="ps-lg-2">
+                                <a class="nav-link link-dark-green py-2 py-lg-0" aria-current="page" href="#">Услуги</a>
+                            </div>
+                        </li>
+                        <li class="top-navigation-menu-list-item text-uppercase nav-item border-right-gray px-lg-3">
+                            <a class="nav-link link-dark-green py-2 py-lg-0" aria-current="page"
+                               href="#">О&nbsp;клинике</a>
+                        </li>
+                        <li class="top-navigation-menu-list-item text-uppercase nav-item border-right-gray px-lg-3">
+                            <a class="nav-link link-dark-green py-2 py-lg-0" aria-current="page" href="#">Врачи</a>
+                        </li>
+                        <li class="top-navigation-menu-list-item text-uppercase nav-item border-right-gray px-lg-3">
+                            <a class="nav-link link-dark-green py-2 py-lg-0" aria-current="page" href="#">Цены</a>
+                        </li>
+                        <li class="top-navigation-menu-list-item text-uppercase nav-item border-right-gray px-lg-3">
+                            <a class="nav-link link-dark-green py-2 py-lg-0" aria-current="page" href="#">Отзывы</a>
+                        </li>
+                        <li class="top-navigation-menu-list-item text-uppercase nav-item border-right-gray px-lg-3">
+                            <a class="nav-link active link-dark-green py-2 py-lg-0" aria-current="page"
+                               href="#">Акции</a>
+                        </li>
+                        <li class="top-navigation-menu-list-item text-uppercase nav-item ps-lg-3">
+                            <a class="nav-link link-dark-green py-2 py-lg-0" aria-current="page" href="#">Клиники</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="collapse multi-collapse d-lg-flex" id="show-content-three">
+                    <div class="top-navigation-communication d-flex align-items-center justify-content-start justify-content-lg-center">
+                        <a href="#" class="top-navigation-communication__search me-2 me-lg-0">
+                            <div class="bg-size-cover" style="background-image: url(img/search.svg)"></div>
+                        </a>
+                        <div class="ps-lg-40 ms-2 ms-lg-0">
+                            <button class="btn btn-lg btn-orange link-white fw-bold" type="button">Обратный звонок
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </nav>
+
+</header>
+
+<main>
+
+    <!--section special-offers-->
+    <section class="special-offers pt-80 pt-sm-100">
+        <div class="bg-gray-100 pt-40 pt-sm-24 pt-lg-150 pt-xl-100 pb-100">
+            <div class="container position-relative">
+                <div class="position-absolute special-offers-gray-item"
+                     style="background-image: url(img/item-background-one.png)"></div>
+                <div>
+                    <div class="special-offers-breadcrumbs d-flex align-items-center">
+                        <div class="special-offers-breadcrumbs__button position-relative bg-light-gray">
+                            <a href="#" class="stretched-link">
+                                <div class="bg-size-contain" style="background-image: url(img/arrow.svg)"></div>
+                            </a>
+                        </div>
+
+                        <!-- breadcrumbs-->
+                        <div class="special-offers-breadcrumbs__link ps-3 pe-12">
+                            <a class="fw-normal text-light-green" href="#">Главная</a>
+                        </div>
+                        <div class="special-offers-breadcrumbs__circle bg-light-green"></div>
+                        <div class="special-offers-breadcrumbs__link ps-12">
+                            <a class="fw-normal text-light-green" href="#">Акции</a>
+                        </div>
+                    </div>
+                    <div class="special-offers-desc pt-24 pb-5 pb-md-64 pb-lg-12">
+                        <div class="special-offers-desc__title">
+                            <h3 class="text-dark-green h3 mb-24">Акции и спецпредложения</h3>
+                        </div>
+                        <div class="special-offers-desc__subtitle">
+                            <p class="text-dark-green fw-normal mb-0">В данном разделе представлены акции от сети клиник
+                                «Медгород», <br> представленная здесь информация
+                                полностью актуальна.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <!--swiper-->
+                    <div class="swiper special-offers-content pt-lg-5">
+                        <div class="swiper-wrapper position-relative">
+                            <div class="swiper-slide special-offers-content-banner bg-size-cover position-relative"
+                                 style="background-image: url(img/healthcare-background.jpg)">
+                                <div class="p-24 p-md-32 p-lg-48 p-xl-64">
+                                    <div class="special-offers-content-banner__picture-one bg-no-repeat position-absolute right-0 bottom-0"
+                                         style="background-image: url(img/doctor-consultation.png)"></div>
+                                    <div class="special-offers-content-banner__stock">
+                                        <p class="text-white bg-dark-green width-fit-content border-radius-4">Акция</p>
+                                    </div>
+                                    <div class="special-offers-content-banner__title">
+                                        <h2 class="h2 text-dark-green fw-bold mb-12 mb-sm-24">Он-лайн консультация <br>
+                                            любого
+                                            врача-терапевта</h2>
+                                    </div>
+                                    <div class="special-offers-content-banner-info">
+                                        <div class="d-flex">
+                                            <div class="special-offers-content-banner-info__old-price pe-8 pe-sm-24">
+                                                <p class="text-dark fw-600 mb-0">1 700 руб.</p>
+                                            </div>
+                                            <div class="special-offers-content-banner-info__sale ps-8 ps-sm-16">
+                                                <p class="text-white bg-orange border-radius-4 mb-0">-30%</p>
+                                            </div>
+                                        </div>
+                                        <div class="special-offers-content-banner-info__price">
+                                            <p class="h2 text-dark-green fw-bolder mb-1">1 190 руб.</p>
+                                        </div>
+                                        <div class="special-offers-content-banner-info__validity">
+                                            <span class="text-dark opacity-50">Акция действует <br class="d-sm-none"> до 30.09.2021 г.</span>
+                                        </div>
+                                    </div>
+                                    <div class="special-offers-content-banner-buttons d-flex pt-24">
+                                        <div class="special-offers-content-banner-buttons__link pe-sm-2">
+                                            <a class="btn btn-lg btn-orange text-white fw-bold" href="#">Записаться</a>
+                                        </div>
+                                        <div class="special-offers-content-banner-buttons__link ps-1 ps-sm-2">
+                                            <a class="btn btn-lg btn-light-green text-white fw-bold"
+                                               href="#">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="swiper-slide special-offers-content-banner bg-size-cover position-relative"
+                                 style="background-image: url(img/healthcare-background.jpg)">
+                                <div class="p-24 p-md-32 p-lg-48 p-xl-64">
+                                    <div class="special-offers-content-banner__picture-two bg-no-repeat position-absolute right-0 bottom-0"
+                                         style="background-image: url(img/doctor-analisies.png)"></div>
+                                    <div class="special-offers-content-banner__stock">
+                                        <p class="text-white bg-dark-green width-fit-content border-radius-4">Акция</p>
+                                    </div>
+                                    <div class="special-offers-content-banner__title">
+                                        <h2 class="h2 text-dark-green fw-bold mb-12 mb-sm-24">Расшифровка анализов<br> у
+                                            любого
+                                            доктора
+                                        </h2>
+                                    </div>
+                                    <div class="special-offers-content-banner-info">
+                                        <div class="d-flex">
+                                            <div class="special-offers-content-banner-info__old-price pe-8 pe-sm-24">
+                                                <p class="text-dark fw-600 mb-0">800 руб.</p>
+                                            </div>
+                                            <div class="special-offers-content-banner-info__sale ps-8 ps-sm-16">
+                                                <p class="text-white bg-orange border-radius-4 mb-0">-30%</p>
+                                            </div>
+                                        </div>
+                                        <div class="special-offers-content-banner-info__price">
+                                            <p class="h2 text-dark-green fw-bolder mb-1">500 руб.</p>
+                                        </div>
+                                        <div class="special-offers-content-banner-info__validity">
+                                            <span class="text-dark opacity-50">Акция действует <br class="d-sm-none"> до 30.09.2021 г.</span>
+                                        </div>
+                                    </div>
+                                    <div class="special-offers-content-banner-buttons d-flex pt-24">
+                                        <div class="special-offers-content-banner-buttons__link pe-sm-2">
+                                            <a class="btn btn-lg btn-orange text-white fw-bold" href="#">Записаться</a>
+                                        </div>
+                                        <div class="special-offers-content-banner-buttons__link ps-1 ps-sm-2">
+                                            <a class="btn btn-lg btn-light-green text-white fw-bold"
+                                               href="#">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide special-offers-content-banner bg-size-cover position-relative"
+                                 style="background-image: url(img/healthcare-background.jpg)">
+                                <div class="p-24 p-md-32 p-lg-48 p-xl-64">
+                                    <div class="special-offers-content-banner__picture-three bg-no-repeat position-absolute right-0 bottom-0"
+                                         style="background-image: url(img/doctor-procedure.png)"></div>
+                                    <div class="special-offers-content-banner__stock">
+                                        <p class="text-white bg-dark-green width-fit-content border-radius-4">Акция</p>
+                                    </div>
+                                    <div class="special-offers-content-banner__title">
+                                        <h2 class="h2 text-dark-green fw-bold mb-12 mb-sm-24">ЭКГ + Эхо-кг</h2>
+                                    </div>
+                                    <div class="special-offers-content-banner-info">
+                                        <div class="d-flex">
+                                            <div class="special-offers-content-banner-info__old-price pe-8 pe-sm-24">
+                                                <p class="text-dark fw-600 mb-0">4 150 руб.</p>
+                                            </div>
+                                            <div class="special-offers-content-banner-info__sale ps-8 ps-sm-16">
+                                                <p class="text-white bg-orange border-radius-4 mb-0">-30%</p>
+                                            </div>
+                                        </div>
+                                        <div class="special-offers-content-banner-info__price">
+                                            <p class="h2 text-dark-green fw-bolder mb-1">2 900 руб.</p>
+                                        </div>
+                                        <div class="special-offers-content-banner-info__validity">
+                                            <span class="text-dark opacity-50">Акция действует <br class="d-sm-none"> до 30.09.2021 г.</span>
+                                        </div>
+                                    </div>
+                                    <div class="special-offers-content-banner-buttons d-flex pt-24">
+                                        <div class="special-offers-content-banner-buttons__link pe-sm-2">
+                                            <a class="btn btn-lg btn-orange text-white fw-bold" href="#">Записаться</a>
+                                        </div>
+                                        <div class="special-offers-content-banner-buttons__link ps-1 ps-sm-2">
+                                            <a class="btn btn-lg btn-light-green text-white fw-bold"
+                                               href="#">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide special-offers-content-banner bg-size-cover position-relative"
+                                 style="background-image: url(img/healthcare-background.jpg)">
+                                <div class="px-24 px-md-32 px-lg-48 px-xl-64 py-24 py-md-32 py-lg-100">
+                                    <div class="special-offers-content-banner__picture-four bg-no-repeat position-absolute right-0 bottom-0"
+                                         style="background-image: url(img/doctor-procedure-two.png)"></div>
+                                    <div class="special-offers-content-banner__stock">
+                                        <p class="text-white bg-dark-green width-fit-content border-radius-4">Акция</p>
+                                    </div>
+                                    <div class="special-offers-content-banner__title">
+                                        <h2 class="h2 text-dark-green fw-bold mb-8">УЗИ </h2>
+                                    </div>
+                                    <div class="special-offers-content-banner-info">
+                                        <div class="special-offers-content-banner-info__price">
+                                            <p class="h3 text-dark-green fw-bolder mb-1">-50% на вторую локацию</p>
+                                        </div>
+                                        <div class="special-offers-content-banner-info__validity">
+                                            <span class="text-dark opacity-50">Акция действует <br class="d-sm-none"> до 30.09.2021 г.</span>
+                                        </div>
+                                    </div>
+                                    <div class="special-offers-content-banner-buttons d-flex pt-24">
+                                        <div class="special-offers-content-banner-buttons__link pe-sm-2">
+                                            <a class="btn btn-lg btn-orange text-white fw-bold" href="#">Записаться</a>
+                                        </div>
+                                        <div class="special-offers-content-banner-buttons__link ps-1 ps-sm-2">
+                                            <a class="btn btn-lg btn-light-green text-white fw-bold"
+                                               href="#">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide special-offers-content-banner bg-size-cover position-relative"
+                                 style="background-image: url(img/healthcare-background.jpg)">
+                                <div class="p-24 p-md-32 p-lg-48 p-xl-64">
+                                    <div class="special-offers-content-banner__picture-five bg-no-repeat position-absolute right-0 bottom-0"
+                                         style="background-image: url(img/doctor-sale.png)"></div>
+                                    <div class="special-offers-content-banner__stock">
+                                        <p class="text-white bg-dark-green width-fit-content border-radius-4">Акция</p>
+                                    </div>
+                                    <div class="special-offers-content-banner__title pt-md-40">
+                                        <h2 class="h2 text-dark-green fw-bold mb-1">Прием любого врача</h2>
+                                    </div>
+                                    <div class="special-offers-content-banner-info">
+                                        <div class="special-offers-content-banner-info__price">
+                                            <p class="h3 text-dark-green fw-bold mb-12 mb-sm-4">+ УЗИ + ЭКГ</p>
+                                        </div>
+                                        <div class="special-offers-content-banner-info__price">
+                                            <p class="h2 text-dark-green fw-bolder mb-1">4 200руб.</p>
+                                        </div>
+                                        <div class="special-offers-content-banner-info__validity">
+                                            <span class="text-dark opacity-50">Акция действует <br class="d-sm-none"> до 30.09.2021 г.</span>
+                                        </div>
+                                    </div>
+                                    <div class="special-offers-content-banner-buttons d-flex pt-24">
+                                        <div class="special-offers-content-banner-buttons__link pe-sm-2">
+                                            <a class="btn btn-lg btn-orange text-white fw-bold" href="#">Записаться</a>
+                                        </div>
+                                        <div class="special-offers-content-banner-buttons__link ps-1 ps-sm-2">
+                                            <a class="btn btn-lg btn-light-green text-white fw-bold"
+                                               href="#">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="special-offers-content-button special-offers-content-button-next bg-no-repeat d-none d-lg-block"></div>
+                        <div class="special-offers-content-button special-offers-content-button-prev bg-no-repeat d-none d-lg-block"></div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+</main>
+
+<script src="js/lib/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="js/lib/swiper/swiper-bundle.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

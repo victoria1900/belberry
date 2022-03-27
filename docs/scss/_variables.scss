@@ -1,0 +1,157 @@
+// Colors
+
+$white: #fff;
+$gray-100: #fbfbfb;
+$gray-200: #e9ecef;
+$gray-300: #BCC6CC;
+$gray-400: #909088;
+$gray-500: #fafafa;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #353531;
+$gray-900: #1D1D1B;
+$black: #000;
+
+$grays: (
+        "100": $gray-100,
+        "200": $gray-200,
+        "300": $gray-300,
+        "400": $gray-400,
+        "500": $gray-500,
+        "600": $gray-600,
+        "700": $gray-700,
+        "800": $gray-800,
+        "900": $gray-900
+);
+
+$light-green:#4c8491;
+$green: #11839E;
+$dark-green: #035063;
+$gray: #878787;
+$orange: #FF7512;
+$light-gray: #E9E9E9;
+$white: #fff;
+$dark:#333333;
+
+$colors: (
+        'green':$green,
+        'dark-green': $dark-green,
+        'gray':$gray,
+        'orange':$orange,
+        'light-gray':$light-gray,
+        'white':$white,
+        'light-green':$light-green,
+        'gray-100':$gray-100,
+        'dark':$dark,
+);
+
+
+$theme-colors: (
+        'green':$green,
+        'dark-green': $dark-green,
+        'gray':$gray,
+        'orange':$orange,
+        'light-gray':$light-gray,
+        'white':$white,
+        'light-green':$light-green,
+        'gray-100':$gray-100,
+        'dark':$dark,
+);
+
+// Spacers
+
+$spacer: 1rem;
+$spacers: (
+        0: 0,
+        1: $spacer * .25, // 4
+        2: $spacer * .5, // 8
+        3: $spacer, // 16
+        4: $spacer * 1.5, // 24
+        5: $spacer * 3, // 48
+        '8': $spacer * 0.5,
+        '12': $spacer * 0.75,
+        '16': $spacer,
+        '20': $spacer * 1.25, //20
+        '24': $spacer * 1.5,
+        '32': $spacer * 2,
+        '40': $spacer * 2.5,
+        '48': $spacer * 3,
+        '64': $spacer * 4,
+        '80': $spacer * 5,
+        '100': $spacer * 6.25,
+        '150': $spacer * 9.375,
+);
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1400px
+);
+
+//containers
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1140px,
+        xxl: 1280px
+);
+
+// Fonts
+
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$font-weight-bolder: 800;
+$headings-font-weight: 600;
+$lead-font-weight: 300;
+
+$font-size-base: 1.0625; // 17px, наборный
+$lead-font-size: 1.4375; // 23px
+
+$font-family-sans-serif: 'Proxima Nova', sans-serif;
+$font-family-base: $font-family-sans-serif;
+$headings-font-family: 'Proxima Nova', sans-serif;
+
+$line-height-base: 1.4;
+$headings-line-height: 1;
+
+// Link Decoration
+
+$link-decoration: none;
+$link-hover-decoration: underline;
+
+// Nav Links
+
+$navbar-light-color: $dark-green;
+$navbar-light-hover-color: $green;
+$navbar-light-active-color: $green;
+$nav-link-padding-x: 0;
+$nav-link-padding-y: 0;
+$nav-link-font-weight: 800;
+
+//buttons
+
+$btn-padding-y-sm: 0.5rem;
+$btn-padding-x-sm: 1rem;
+$btn-padding-y-lg: 0.75rem;
+$btn-padding-x-lg: 2rem;
+$btn-border-width: 0.06rem;
+$btn-border-radius: 2rem;
+$btn-border-radius-lg: 2rem;
+$border-radius-sm: 2rem;
+
+//border
+$border-color: $gray-100;
+
+//ratios
+$aspect-ratios: (
+        "1x1": 100%,
+        "4x3": calc(3 / 4 * 100%),
+        "16x9": calc(9 / 16 * 100%),
+        "21x9": calc(9 / 21 * 100%),
+        "20x11": calc(11 / 20 * 100%),
+        "3x5": calc(5 / 3 * 100%),
+);
